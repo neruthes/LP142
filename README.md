@@ -1,6 +1,6 @@
 # LP142
 
-轻小说《Der New Monde》策划。
+轻小说《The Paradox Problem》策划。
 
 ## 正文目录
 

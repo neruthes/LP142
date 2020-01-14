@@ -1,6 +1,6 @@
 # LP142
 
-轻小说《Zhabei/Zero》策划。
+轻小说《Der New Monde》策划。
 
 ## 正文目录
 

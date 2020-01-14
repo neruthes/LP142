@@ -3,7 +3,7 @@
 <!-- 181 -->
 <head>
 	<meta charset="utf-8" />
-	<title>neruthes/LP141 - Index</title>
+	<title>neruthes/LP142 - Index</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">
 	* {
@@ -100,7 +100,7 @@
 	<div class="cont" data-scene="index">
 		<div class="content">
 			<h1 class="header-type-alpha">
-				Index of <a href="https://github.com/neruthes/LP141">neruthes/LP141</a>
+				Index of <a href="https://github.com/neruthes/LP142">neruthes/LP142</a>
 			</h1>
 
 			<div id="text">
@@ -154,11 +154,10 @@
 			var renderPage = function () {
 				document.querySelector('#text').innerHTML = (function () {
 					window.username = 'neruthes';
-					window.repo = 'LP141';
+					window.repo = 'LP142';
 					window.list = `README.md|简介与目录
-chapters/0001.txt|1. 夜幕降临
-chapters/0002.txt|2. 标题未定（施工中）`.split('\n');
-					window.commit = '8702b29e88ac05fb90194d3fe72ef4dc5319b7b1';
+chapters/0001.txt|1. 标题未定（施工中）`.split('\n');
+					window.commit = 'e54b60003a135c1f03f59d65849c2061ed984580';
 					document.title = `${username}/${repo} - Index`;
 					window.listLength = list.length;
 					return list.map(function (v, i) {
@@ -187,13 +186,13 @@ chapters/0002.txt|2. 标题未定（施工中）`.split('\n');
 					tryToShowError404();
 					(function () {
 						window.xhr2 = new XMLHttpRequest();
-						xhr2.open('get', `https://cdn.jsdelivr.net/gh/neruthes/LP141@${commit}/_/_.neruthes.rawpreview/config/list-of-files.txt`);
+						xhr2.open('get', `https://cdn.jsdelivr.net/gh/neruthes/LP142@${commit}/_/_.neruthes.rawpreview/config/list-of-files.txt`);
 						xhr2.addEventListener('load', function () {
 							window.currentDocumentTitle = xhr2.responseText.trim().split('\n')[itemIndexRedir];
 							window.setTimeout(function () {
 								if (document.body.getAttribute('data-current-scene') === 'article') {
 									// document.title = `${currentDocumentTitle} - RawPreview`;
-									document.title = `${(currentDocumentTitle.indexOf('|') === -1) ? currentDocumentTitle : currentDocumentTitle.split('|')[1]} - neruthes/LP141`;
+									document.title = `${(currentDocumentTitle.indexOf('|') === -1) ? currentDocumentTitle : currentDocumentTitle.split('|')[1]} - neruthes/LP142`;
 								};
 							}, 50);
 						});
